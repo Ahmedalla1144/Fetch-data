@@ -37,3 +37,11 @@ h2 {
   margin-right: 200px;
   color: rgb(46, 45, 45);
 }
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 26px;
+  }
+  blockquote {
+    font-size: 22px;
+  }
+}
