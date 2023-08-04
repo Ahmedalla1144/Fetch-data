@@ -9,6 +9,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-image: url(imgs/back-ground.jpg);
   background-size: contain;
+  background-width: 100%;
 }
 
 div {
