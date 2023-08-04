@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fetch data</title>
+  </head>
+
+  <body>
+    <div id="quotes_box"><h2>Quotes:-</h2></div>
+    <script>
+      const api = "https://dummyjson.com/quotes";
+
+      const show_quote = function (q) {
+        quotes_box.innerHTML += `
+            <blockquote>
+              ${q.quote}  
+              <footer>
+              ${q.author}  
+            </footer>
+            </blockquote>
+            `;
+      };
+
+      const get_quotes = async function () {
+        const res = await fetch(api);
+
+        console.log(res);
+
+        const data = await res.json();
+
+        console.log(data);
+
+        const quotes = data.quotes;
+
+        console.log(quotes);
+
+        quotes.forEach(show_quote);
+      };
+
+      get_quotes();
+    </script>
+  </body>
+</html>
