@@ -9,8 +9,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-image: url(imgs/back-ground.jpg);
   background-size: contain;
-  background-width: 100%;
-  background-size: no-repeat;
+  background-size: 100%;
 }
 
 div {
@@ -34,6 +33,7 @@ blockquote:hover {
   color: black;
   border-bottom: solid red;
   border-left: solid red;
+  font-weight: 600;
 }
 h2 {
   margin-right: 200px;
@@ -41,9 +41,9 @@ h2 {
 }
 @media (min-width: 1024px) {
   h2 {
-    font-size: 26px;
+    font-size: 33px;
   }
   blockquote {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
